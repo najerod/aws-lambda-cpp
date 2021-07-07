@@ -392,6 +392,7 @@ Save the arn.
 In the following command, make sure:
 - <specify the role arn from the previous step> is replaced with the arn provided by the "aws iam create-role" command done previously
 - specify the name of the zip file by changing <NAME_OF_PROG> (can be hello.zip or encode.zip if you want to upload the examples provided by AWS)
+ - specify the handler by replacing <HANDLER> below, for the hello world app, the handler is hello, and for the s3 example, the handler is encoder
 
 ```
 aws lambda create-function \
@@ -400,7 +401,7 @@ aws lambda create-function \
 --runtime provided \
 --timeout 15 \
 --memory-size 128 \
---handler hello \
+--handler <HANDLER> \
 --zip-file fileb://<NAME_OF_PROG>.zip
 ```
 
