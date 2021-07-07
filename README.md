@@ -115,7 +115,11 @@ run_handler(my_handler);
 return 0; 
 }
 ```
-
+Note: to create a new file, juste type
+```
+vi main.cpp
+```
+and then press I (input mode), past the code above, then press ESC, then type :wq
 
 Write a CMakeLists.txt file including
 ```
@@ -290,6 +294,13 @@ std::string download_and_encode_file(
 }
 ```
 
+Note: to create a new file, juste type
+```
+vi main.cpp
+```
+and then press I (input mode), past the code above, then press ESC, then type :wq
+
+
 Write a CMakeLists.txt file including
 ```
 cmake_minimum_required(VERSION 3.5)
@@ -330,6 +341,7 @@ cd ~
 
 ## Prerequisite: Install and configure AWS CLI
 ```
+cd ~
 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
 unzip awscliv2.zip
 sudo ./aws/install
